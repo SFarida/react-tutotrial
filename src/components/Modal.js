@@ -1,5 +1,7 @@
 import { useState, useRef } from 'react';
 import { useOnClickOutside } from '../useOnClickOutside';
+import UncontrolledForm from './UncontrolledForm';
+import Form from './Form';
 
 const Modal = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -22,7 +24,11 @@ const Modal = () => {
                 openModal && (
                 <div ref={ref} className="modalContent">
                   <span role="button" tabIndex={0} onClick={closeModalHandler} onKeyDown={closeModalHandler}>X</span>
-                  <div>Modal content here</div>
+                  <div>
+                    <UncontrolledForm />
+                    <br />
+                    <Form />
+                  </div>
                 </div>
                 )
             }
