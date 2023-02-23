@@ -1,5 +1,3 @@
-const InputTodo = () => {
-    return <div>input field here...</div>;
-};
+const InputTodo = () => <div>input field here...</div>;
 
 export default InputTodo;

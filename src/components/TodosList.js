@@ -1,14 +1,14 @@
-import TodoItem from "./TodoItem";
+import TodoItem from './TodoItem';
 
 const TodosList = (props) => {
-    const { todosProps } = props;
-    return (
-        <ul>
-            {
-                todosProps.map((todo) => (<TodoItem key={todo.id} itemProp={todo}/>))
+  const { todosProps } = props;
+  return (
+    <ul>
+      {
+                todosProps.map((todo) => (<TodoItem key={todo.id} itemProp={todo} />))
             }
-        </ul>
-    );
+    </ul>
+  );
 };
 
 export default TodosList;

@@ -1,7 +1,5 @@
-const TodoItem = ({itemProp}) => {
-    return (
-        <li>{itemProp.title}</li>
-    );
-};
+const TodoItem = ({ itemProp }) => (
+  <li>{itemProp.title}</li>
+);
 
 export default TodoItem;
