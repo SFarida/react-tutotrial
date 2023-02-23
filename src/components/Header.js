@@ -1,5 +1,8 @@
+import Navbar from "./Navbar";
+
 const Header = () => (
   <header>
+    <Navbar />
     <h1>todos</h1>
     <p>Items will persist in the browser local storage</p>
   </header>
