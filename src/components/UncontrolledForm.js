@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef } from 'react';
 
 const UncontrolledForm = () => {
   const ref = useRef();
@@ -10,8 +10,10 @@ const UncontrolledForm = () => {
     <>
       <h1>Uncontrolled Form</h1>
       <form onSubmit={handleSubmit}>
-        <label>
-          First Name: <input type="text" ref={ref} />
+        <label htmlFor="text">
+          First Name:
+          {' '}
+          <input type="text" ref={ref} />
         </label>
         <input type="submit" />
       </form>
