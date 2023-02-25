@@ -4,7 +4,7 @@ const UncontrolledForm = () => {
   const ref = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(ref.current.value);
+    // alert(ref.current.value);
   };
   return (
     <>
